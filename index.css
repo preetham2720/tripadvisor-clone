@@ -184,6 +184,7 @@ body{
     border-radius: 25px;
     padding-left: 2%;
     padding-right: 2%;
+    cursor: pointer;
 }
 
 .content2_image{
