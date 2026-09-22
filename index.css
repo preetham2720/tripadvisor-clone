@@ -175,6 +175,17 @@ body{
     margin-bottom: 10px;
 }
 
+.content2__content--btn{
+    margin-top: 10px;
+    margin-left: 30%;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .content2_image{
     position: relative;
     width: 100%;
@@ -331,5 +342,8 @@ body{
     .copyright{
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .content2__content--btn{
+        font-size: 10px;
     }
 }
