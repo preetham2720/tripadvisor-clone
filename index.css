@@ -198,8 +198,10 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-    animation: fadeImage 8s infinite;
+    animation-name: fadeImage;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
 }
 
 .content2_image img,.content2_image2 img,.content2_image3 img,.content2_image4 img {
@@ -223,15 +225,34 @@ body{
     padding-left: 2%;
 }
 
-.content2_image2 { animation-delay: 2s; }
-.content2_image3 { animation-delay: 4s; }
-.content2_image4 { animation-delay: 6s; }
-
-@keyframes fadeImage {
-    0%,20%  { opacity: 1; }
-    100% { opacity: 0; }
+.content2_image  { 
+    opacity: 0;
+    animation-delay: 0s; 
+}
+.content2_image2 { 
+    opacity: 0;
+    animation-delay: 2s; 
+}
+.content2_image3 { 
+    opacity: 0;
+    animation-delay: 4s; 
+}
+.content2_image4 { 
+    opacity: 0;
+    animation-delay: 6s; 
 }
 
+@keyframes fadeImage {
+    0% { 
+        opacity: 1; 
+    }
+    25%{
+        opacity: 0;
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
 
 
 .content2__line{
