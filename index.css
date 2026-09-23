@@ -187,30 +187,52 @@ body{
     cursor: pointer;
 }
 
-.content2_image{
+.imagean{
     position: relative;
     width: 100%;
 }
 
-.content2_image img{
+.content2_image,.content2_image2,.content2_image3,.content2_image4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeImage 8s infinite;
+}
+
+.content2_image img,.content2_image2 img,.content2_image3 img,.content2_image4 img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
 }
 
-.content2_image p{
+.content2_image p,.content2_image2 p,.content2_image3 p,.content2_image4 p {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 2%;
+    left: 2%;
     z-index: 1;
     background-color: greenyellow;
     border: solid black 2px;
     border-radius: 35px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
 }
+
+.content2_image2 { animation-delay: 2s; }
+.content2_image3 { animation-delay: 4s; }
+.content2_image4 { animation-delay: 6s; }
+
+@keyframes fadeImage {
+    0%,20%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
 
 .content2__line{
     border-left: solid black 2px;
