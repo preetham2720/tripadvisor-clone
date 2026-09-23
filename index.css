@@ -80,7 +80,7 @@ body{
 
 .content1__s1{
     margin-top: 30px;
-    padding: 10px;
+    padding: 1%;
     display: flex;
     gap: 30px;
 }
@@ -111,7 +111,7 @@ body{
     padding: 10px;
     flex-grow: 1;
     border: none;
-    margin-left: 10px;
+    margin-left: 1%;
     font-size: 18px;
 }
 
@@ -167,20 +167,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 50px;
+    padding: 5%;
 }
 
 .content2__content h1{
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .content2__content--btn{
-    margin-top: 10px;
+    margin-top: 1%;
     margin-left: 30%;
     background-color: black;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 1%;
     border-radius: 25px;
     padding-left: 2%;
     padding-right: 2%;
@@ -296,7 +296,7 @@ body{
     align-items: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navbarsub{
         margin-left: 5%;
         margin-right: 5%;
@@ -325,6 +325,65 @@ body{
     }
     .content2{
         height: 200px;
+    }
+    .content4 img{
+        height: 100px;
+    }
+
+    .content5 img{
+        height: 100px;
+    }
+    .footersub{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footersub{
+        font-size: 10px;
+    }
+    .copyright{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .content2__content--btn{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbarsub{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .normalview{
+        display: none;
+    }
+    .mobileview{
+        display: block;
+    }
+    .content1{
+        font-size: 12px;
+    }
+    .content1__s1{
+        font-size: 11px;
+    }
+    .content1__s2{
+        width: 95%;
+    }
+    .content1__s2--input{
+        font-size: 12px;
+    }
+    .content2__content h1 {
+        font-size: 15px;
+    }
+    .content2{
+        height: 100px;
+    }
+    .content2__content p{
+        font-size: 12px;
     }
     .content4 img{
         height: 100px;
